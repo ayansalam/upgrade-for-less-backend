@@ -1,0 +1,9 @@
+{
+  "name": "upgrade-for-less-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "razorpay": "^2.9.0",
+    "@supabase/supabase-js": "^2.39.0"
+  }
+} 
