@@ -1,7 +1,5 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
+import type { NextApiRequest, NextApiResponse } from "next";
 
-export default function handler(req: VercelRequest, res: VercelResponse) {
-  if (req.method !== 'POST') return res.status(405).end();
-  // Add webhook signature verification logic here
-  return res.status(200).json({ received: true });
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+  res.status(200).json({ success: true, message: "Webhook received" });
 } 
